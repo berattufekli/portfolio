@@ -4,7 +4,7 @@ import Home from './Home';
 import Work from './Work';
 import About from './About';
 import Contact from './Contact';
-import { Box, Flex, IconButton, Link, useDisclosure, useBreakpointValue, DrawerCloseButton, Button } from '@chakra-ui/react';
+import { Box, Flex, IconButton, Link, useDisclosure, useBreakpointValue, DrawerCloseButton } from '@chakra-ui/react';
 import { Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody } from '@chakra-ui/react'
 import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 
