@@ -4,7 +4,7 @@ import Home from './Home';
 import Work from './Work';
 import About from './About';
 import Contact from './Contact';
-import { Box, Flex, IconButton, Link, useDisclosure, useBreakpointValue, DrawerCloseButton } from '@chakra-ui/react';
+import { Box, Flex, IconButton, useDisclosure, useBreakpointValue, DrawerCloseButton, Text } from '@chakra-ui/react';
 import { Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody } from '@chakra-ui/react'
 import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 
@@ -21,10 +21,10 @@ function Navbar() {
   return (
     
       <Router>
-        <Box bg={theme === "dark" ? "gray.900" : "white"} padding={"2"} height={"100vh"}>
+        <Box className='bg' bgSize={"500vh"} bgColor={theme === "dark" ? "gray.900" : "white"} padding={"2"} height={"100vh"}>
           <Flex alignItems={"center"} padding={"2"} height={"5vh"} mt={"2"} width={"full"} justifyContent={"space-between"}>
             {
-              Size === "lg" ? <Link color={theme === "dark" ? "white" : "gray.700"} bg={"transparent"} _active={{background:"transparnet"}} _hover={{background:"transparent"}} className="text"><NavLink className={"w-full h-full"} to={"/"}>bt</NavLink></Link> :
+              Size === "lg" ? <Text textShadow={"-1px -1px red"} color={theme === "dark" ? "white" : "gray.700"} bg={"transparent"} _active={{background:"transparnet"}} _hover={{background:"transparent"}} className="text"><NavLink className={"w-full h-full"} to={"/"}>bt</NavLink></Text> :
               <IconButton color={theme === "dark" ? "white" : "gray.700"} bg={"transparent"} _active={theme === "dark" ? {background:"gray.700"} : {background:"gray.300"}} _hover={theme === "dark" ? {background:"gray.700"} : {background:"gray.300"}} onClick={onOpen} icon={<HamburgerIcon/>}></IconButton>  
             }
 
@@ -36,7 +36,11 @@ function Navbar() {
                 <NavLink className={theme === "dark" ? "nav rounded p-2 hover:bg-gray-700" : "nav rounded p-2 hover:bg-gray-300"} to="/about">About Me</NavLink>
                 <NavLink className={theme === "dark" ? "nav rounded p-2 hover:bg-gray-700" : "nav rounded p-2 hover:bg-gray-300"} to="/contact">Contact</NavLink>
               </Flex> :
-                <Link color={theme === "dark" ? "white" : "gray.700"} bg={"transparent"} _active={{background:"transparnet"}} _hover={{background:"transparent"}} className="text"><NavLink className={"w-full h-full"} to={"/"}>bt</NavLink></Link>
+                <Text textShadow={"-1px -1px red"} color={theme === "dark" ? "white" : "gray.700"} bg={"transparent"} _active={{background:"transparnet"}} _hover={{background:"transparent"}} className="text">
+                  <NavLink className={"w-full h-full"} to={"/"}>
+                    bt
+                  </NavLink>
+                </Text>
             }
 
 

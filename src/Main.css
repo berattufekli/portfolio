@@ -594,3 +594,11 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
+
+
+.bg{
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+
+
+}
