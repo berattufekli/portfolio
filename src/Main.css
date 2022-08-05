@@ -572,13 +572,55 @@ video {
 }
 
 .text{
-  font-family: 'Space Mono', monospace;
+  font-family: 'Mark Pro', sans-serif;
   font-weight: bolder;
   font-size: 18px;
 }
 
-.nav{
+.homeText{
   font-family: 'Space Mono', monospace;
+  font-weight: bold;
+}
+
+.gradientDark{
+  font-family: 'Space Mono', monospace;
+  background: -webkit-linear-gradient(43deg,#b0f3f1,#ffcfdf);
+  background-clip: text;
+  background: linear-gradient(43deg,#b0f3f1,#ffcfdf); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  -webkit-animation: gradient 3s ease infinite;
+  animation: gradient 3s ease infinite;
+}
+
+.gradientLight{
+  font-family: 'Space Mono', monospace;
+  background: -webkit-linear-gradient(43deg,#b0f3f1,#ffcfdf);
+  background-clip: text;
+  background: linear-gradient(135deg, #8BC6EC, #9599E2);
+  background: -webkit-linear-gradient(135deg, #8BC6EC, #9599E2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  -webkit-animation: gradient 3s ease infinite;
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.nav{
+  font-family: 'Mark Pro', sans-serif;
   font-weight: bolder;
   font-size: 16px;
   background-color: transparent;
@@ -595,10 +637,3 @@ video {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-
-.bg{
-  -webkit-overflow-scrolling: touch;
-  overflow: auto;
-
-
-}
