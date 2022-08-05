@@ -7,7 +7,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 function Home(props) {
   const theme = props.theme;
   return (
-    <Center height={{base:"70vh", md:"90vh"}}>
+    <Center height={{base:"60vh", md:"90vh"}}>
       <Flex position={"fixed"} bottom={{base:"5", md:"5"}} left={{base:"unset", md:"5"}} flexDirection={{base: "row", md: "column"}} justifyContent={"space-around"}>
             <IconButton margin={2} variant={"outline"} as={"a"} borderColor={theme === "dark" ? "gray.700" : "gray.300" }  color={theme === "dark" ? "white" : "black"} _hover={theme === "dark" ? {background:"gray.700"} : {background:"gray.300"}} target="_blank" href='https://github.com/berattufekli' rounded={"full"} icon={<FaGithub />}></IconButton>
             
